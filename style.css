@@ -1,0 +1,420 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Header */
+
+.header_main{
+    background-color: #e0e0e0;
+}
+
+.header_logo img {
+	width: 80px;
+}
+
+/* ======>>HEADER MENU CSS <======= */
+/* .active{
+	color: #3763eb !important;
+} */
+
+.active_home{
+	position: relative;
+	color: #3763eb !important;
+}
+
+
+.active_home::before {
+	content: "";
+	position: absolute;
+	background: #3763eb;
+	height: 2px;
+	width: 70%;
+	top: 46px;
+	left: 12px;
+}
+
+.header_menu span {
+    font-size: 9px;
+}
+
+.active {
+    color: #e83b3e;
+}
+
+ul.header_menu {}
+
+ul.header_menu li {
+    
+}
+
+ul.header_menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s;
+    position: relative;  
+}
+
+ul.header_menu li a::after {
+	content: "";
+	position: absolute;
+	background: #111;
+	height: 2px;
+	width: 0%;
+	top: 46px;
+	left: 15px;
+	transition: 0.5s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+ul.header_menu li a:hover::after{
+    background-color: #3763eb;
+	opacity: 1;
+    visibility: visible;
+	width: 70%;
+}
+
+ul.header_menu li a:hover {
+    
+}
+/* .header_buttton .btn{
+	color: #3763eb;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 22px;
+	padding: 10px 21px;
+	margin-left: 45px;
+	display: inline-block;
+	overflow: hidden;
+
+	position: relative;
+	z-index: 1;
+}
+
+.header_buttton .btn::before{
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	background-color: #3763eb;
+	
+	border-radius: 22px;
+	z-index: -1;
+	
+
+	transition: 0.3s;
+}
+.header_buttton .btn:hover::before{
+	width: 100%;
+	
+	
+} */
+
+.btn-primary{
+    position: relative;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 40px;
+    transition: all.5s;
+    background: #fff !important;
+    color: #0d6efd;
+	margin-left: 45px;
+    z-index: 1;
+    border: transparent;
+	overflow: hidden;
+    
+    
+}
+
+button.btn-primary::before{ 
+    position: absolute;
+    content:"" ;
+    width:0 ;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #766ffc;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all.5s;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.btn-primary:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    border: transparent;
+    
+    
+}
+
+/* Hero_section */
+
+.Hero_section{
+    background-color: #edf6ff;
+}
+
+.hero_item{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.hero_item::after {
+	content: "";
+	position: absolute;
+	top: -154px;
+	left: 814px;
+	height: 132%;
+	width: 48%;
+	border-radius: 50%;
+	background: url(./img/hero-image.jpg) no-repeat top center;
+	background-size: cover;
+}
+.all_item{}
+.all_item h2 {
+	font-size: 40px;
+	width: 550px;
+	font-weight: 600;
+}
+.all_item p {
+	width: 473px;
+	color: #606060;
+	margin: 27px 0px;
+}
+.hero_btn .btn {
+	padding-left: 0;
+	color: #fff;
+	background: #3763eb;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 13px 20px;
+	border-radius: 30px;
+
+	transition: 0.3s;
+}
+
+.hero_btn .btn:hover{
+	background-color: #fff;
+	color: #3763eb;
+	border-color: #3763eb;
+}
+
+/* service_section */
+
+.service_section{
+    position: relative;
+}
+.service_item{
+    width: 48%;
+}
+.service_item::after {
+	content: "";
+	position: absolute;
+	left: 121px;
+	height: 3px;
+	width: 67px;
+	background-color: #3763eb;
+	bottom: 131px;
+}
+.service_item h6 {
+	font-weight: 400;
+	color: #827ff0;
+	margin-bottom: 25px;
+}
+.service_item h1 {
+	font-size: 32px;
+	margin-left: 0;
+	font-weight: 600;
+	margin: 26px 0px;
+	line-height: 42px;
+	margin-bottom: 45px;
+}
+.service_item p {
+	font-size: 15px;
+	color: #606060;
+}
+
+/* Service2 section */
+
+.service2_section{}
+
+.card_item {
+	background: #f6f9fc;
+	position: relative;
+	border-radius: 15px;
+	transition: 0.4s;
+}
+
+
+.card_item:hover{
+	background-color: #3763eb;
+	color: #fff !important;
+	transform: scale(1.1);
+}
+
+.card_item:hover .card_icon::after{
+	background-color: #fff;
+	width: 46px;
+}
+.card_icon::after {
+	content: "";
+	position: absolute;
+	left: 24px;
+	height: 3px;
+	width: 30px;
+	background-color: #3763eb;
+	bottom: 87px;
+
+	transition: 0.4s;
+}
+.card_item h5 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.card_item h4 {
+	font-size: 14px;
+	/* color: #606060; */
+}
+.card_icon {
+	display: inline-block;
+	color: #fff;
+	font-size: 26px;
+	height: 60px;
+	width: 60px;
+	background: #3763eb;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50% 50% 50% 0px;
+
+	transition: 0.4s;
+}
+
+.card_item:hover .card_icon{
+	background-color: #fff;
+	color: #3763eb;
+} 
+/* ==================================
+animated section css start
+==================================== */
+.animated-section-head {
+    background: url(./img/video-bg.jpg) no-repeat center;
+
+	padding: 180px 0px !important;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.animated-section-head::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(25, 62, 92, 0.9);
+    z-index: -1;
+}
+
+.animated-title  .line-div {
+    position: relative;
+    margin-bottom: 34px;
+}
+.animated-title .line-div::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 250px;
+	height: 2px;
+	width: 60px;
+	background-color: #fff;
+}
+
+.text_item {
+	position: relative;
+	width: 600px;
+	margin: auto;
+	top: -160px;
+}
+
+
+.play-animation-btn {
+	width: 85px;
+	height: 85px;
+	display: inline-block;
+	background: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 85px;
+	color: #036eff;
+	border-radius: 50%;
+	position: absolute;
+	right: 48%;
+	top: 56%;
+	transition: all 0.4s ease-in;
+}
+.play-animation-btn:hover{
+    color: #fff;
+    background-color: #036eff;
+    transition: all 0.4s;
+}
+.play-animation-btn::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: playbtn 2s ease-out infinite;
+}
+.play-animation-btn::after {
+    content: "";
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: playbtn 2s ease-out infinite;
+}
+
+@keyframes playbtn{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transition: scale(1.5);
+        opacity: 0.6;
+    }
+    50%{
+        transform: scale(1.8);
+        opacity: 0.4;
+    }
+	100%{
+        transform: scale(2.1);
+        opacity: 0;
+    }
+    
+}
+
+/* ==================================
+animated section css start
+==================================== */
